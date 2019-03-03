@@ -14,11 +14,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          greeting - short space
+          python basic note - short space
         
     </title>
 
-    <link rel="canonical" href="http://yoursite-url/2019/02/26/greeting/">
+    <link rel="canonical" href="http://yoursite-url/2019/03/03/Python_basic/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -69,7 +69,7 @@
 <style type="text/css">
     header.intro-header{
         
-            background-image: url('Chris Turnham cut.jpg')
+            background-image: url('./source/img/header_img/Chris Turnham cut.jpg')
             /*post*/
         
     }
@@ -86,14 +86,14 @@
                     <div class="post-heading">
                         <div class="tags">
                             
-                              <a class="tag" href="/tags/#personal" title="personal">personal</a>
+                              <a class="tag" href="/tags/#python" title="python">python</a>
                             
                         </div>
-                        <h1>greeting</h1>
+                        <h1>python basic note</h1>
                         <h2 class="subheading"></h2>
                         <span class="meta">
                             Posted by shorty on
-                            2019-02-26
+                            2019-03-03
                         </span>
                     </div>
                 
@@ -210,10 +210,85 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <p><strong>hi, welcome to my short space.</strong></p>
-<p><strong>stay pride</strong></p>
-<p><img src="Pride2018Illustration_melissaleejohnsonart.jpg" alt="pic"></p>
-<p>yix</p>
+                <blockquote>
+<p>This is a note recorded based on my personal study of the online learning document on <a href="https://scipy-lectures.org" target="_blank" rel="noopener">scipy-lectures.org</a></p>
+</blockquote>
+<p><strong>My first step of learning the scipy package on Python is to review the basic of python language</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">print</span> (<span class="string">'hi'</span>)</span><br></pre></td></tr></table></figure>
+<pre><code>hi
+</code></pre>
+<p>– use alias to see the common command in UNIX</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alias</span><br></pre></td></tr></table></figure>
+<pre><code>Total number of aliases: 12
+
+
+
+
+
+[('cat', 'cat'),
+ ('cp', 'cp'),
+ ('ldir', 'ls -F -G -l %l | grep /$'),
+ ('lf', 'ls -F -l -G %l | grep ^-'),
+ ('lk', 'ls -F -l -G %l | grep ^l'),
+ ('ll', 'ls -F -l -G'),
+ ('ls', 'ls -F -G'),
+ ('lx', 'ls -F -l -G %l | grep ^-..x'),
+ ('mkdir', 'mkdir'),
+ ('mv', 'mv'),
+ ('rm', 'rm'),
+ ('rmdir', 'rmdir')]
+</code></pre>
+<p>– **while / break / continue **</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">z = <span class="number">1</span>+<span class="number">1j</span></span><br><span class="line"><span class="keyword">while</span> abs(z)&lt;<span class="number">100</span>:</span><br><span class="line">    z = z**<span class="number">2</span> + <span class="number">1</span></span><br><span class="line">z</span><br></pre></td></tr></table></figure>
+<pre><code>(-134+352j)
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">z = <span class="number">1</span> + <span class="number">1j</span></span><br><span class="line"><span class="keyword">while</span> abs(z) &lt; <span class="number">100</span>:</span><br><span class="line">    <span class="keyword">if</span> z.imag == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    z = z**<span class="number">2</span> + <span class="number">1</span></span><br><span class="line">z</span><br></pre></td></tr></table></figure>
+<pre><code>(-134+352j)
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">a = [<span class="number">1</span>,<span class="number">0</span>,<span class="number">2</span>,<span class="number">4</span>]</span><br><span class="line"><span class="keyword">for</span> element <span class="keyword">in</span> a:</span><br><span class="line">    <span class="keyword">if</span> element == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">print</span> (<span class="string">'0'</span>)</span><br><span class="line">        <span class="keyword">continue</span></span><br><span class="line">    print(<span class="number">1.</span>/element)</span><br></pre></td></tr></table></figure>
+<pre><code>1.0
+0
+0.5
+0.25
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">a = [<span class="number">1</span>,<span class="number">0</span>,<span class="number">2</span>,<span class="number">4</span>]</span><br><span class="line"><span class="keyword">for</span> element <span class="keyword">in</span> a:</span><br><span class="line">    <span class="keyword">if</span> element == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">print</span> (<span class="string">'0'</span>)</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    print(<span class="number">1.</span>/element)</span><br></pre></td></tr></table></figure>
+<pre><code>1.0
+0
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">words = (<span class="string">'cool'</span>, <span class="string">'powerful'</span>, <span class="string">'readable'</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range (len(words)):</span><br><span class="line">    print((i, words[i]))</span><br></pre></td></tr></table></figure>
+<pre><code>(0, 'cool')
+(1, 'powerful')
+(2, 'readable')
+</code></pre>
+<p>– python has a built-in function <strong>enumerate</strong> for this</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> index, item <span class="keyword">in</span> enumerate(words):</span><br><span class="line">    print((index, item))</span><br></pre></td></tr></table></figure>
+<pre><code>(0, 'cool')
+(1, 'powerful')
+(2, 'readable')
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">pi = <span class="number">1</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range (<span class="number">1</span>,<span class="number">10000000</span>):</span><br><span class="line">    pi = pi*(<span class="number">4</span>*i*i)/(<span class="number">4</span>*i*i<span class="number">-1</span>)</span><br><span class="line">pi = <span class="number">2</span>*pi</span><br><span class="line"><span class="keyword">print</span> (pi)</span><br></pre></td></tr></table></figure>
+<pre><code>3.1415925750514972
+</code></pre>
+<p>– Special form of parameters:<br>
+*args : any number of positional arguments packed into a <strong>tuple</strong><br>
+**kwargs : any number of keyword arguments packed into a <strong>dictionary</strong></p>
+<p><strong>?how to use?</strong></p>
+<p>–</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">variable_args</span><span class="params">(*args, **kwargs)</span>:</span></span><br><span class="line">    <span class="string">"""Documentation of the function</span></span><br><span class="line"><span class="string">    can be written in here.</span></span><br><span class="line"><span class="string">    Command: variable_args? to see the docstring</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    print(<span class="string">'args are'</span>, args)</span><br><span class="line">    print(<span class="string">'kwargs are'</span>, kwargs)</span><br><span class="line">variable_args(<span class="string">'first'</span>,<span class="string">'second'</span>,x=<span class="number">1</span>,y=<span class="number">2</span>,z=<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line">variable_args?</span><br></pre></td></tr></table></figure>
+<pre><code>args are ('first', 'second')
+kwargs are {'x': 1, 'y': 2, 'z': 3}
+</code></pre>
+<p>– Exercise: Fibonacci sequence</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">U = [<span class="number">0</span>,<span class="number">1</span>]</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">findFib</span><span class="params">(list=U)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">2</span>,<span class="number">10</span>):</span><br><span class="line">        list.append (U[i<span class="number">-1</span>]+U[i<span class="number">-2</span>])</span><br><span class="line">    <span class="keyword">print</span> (U)</span><br><span class="line">findFib()</span><br></pre></td></tr></table></figure>
+<pre><code>[0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+</code></pre>
+<p>– Excerise: Quicksort</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">quicksort</span><span class="params">(array)</span>:</span></span><br><span class="line">    less = []</span><br><span class="line">    greater = []</span><br><span class="line">    <span class="keyword">if</span> len(array)&lt;<span class="number">2</span>:</span><br><span class="line">        <span class="keyword">return</span> array[:]</span><br><span class="line">    pivot = array[<span class="number">-1</span>]</span><br><span class="line">    <span class="keyword">for</span> x <span class="keyword">in</span> array:</span><br><span class="line">        <span class="keyword">if</span> x != pivot: </span><br><span class="line">            <span class="keyword">if</span> x &lt; pivot + <span class="number">1</span>:</span><br><span class="line">                less.append(x)</span><br><span class="line">            <span class="keyword">else</span>: greater.append(x)</span><br><span class="line">    array = quicksort(less)+[pivot]+quicksort(greater)</span><br><span class="line">    <span class="keyword">return</span> array</span><br><span class="line"></span><br><span class="line">quicksort([<span class="number">2</span>,<span class="number">5</span>,<span class="number">7</span>,<span class="number">4</span>,<span class="number">9</span>,<span class="number">8</span>])</span><br></pre></td></tr></table></figure>
+<pre><code>[2, 4, 5, 7, 8, 9]
+</code></pre>
+<blockquote>
+<p>Noted on March 3, 2019 by Short</p>
+</blockquote>
 
                 
 
@@ -221,10 +296,10 @@
                 <!-- Pager -->
                 <ul class="pager">
                     
-                        <li class="previous">
-                            <a href="/2019/03/03/Python_basic/" data-toggle="tooltip" data-placement="top" title="python basic note">&larr; Previous Post</a>
-                        </li>
                     
+                        <li class="next">
+                            <a href="/2019/02/26/greeting/" data-toggle="tooltip" data-placement="top" title="greeting">Next Post &rarr;</a>
+                        </li>
                     
                 </ul>
 
@@ -273,7 +348,7 @@
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                        
-                          <a class="tag" href="/tags/#personal" title="personal">personal</a>
+                          <a class="tag" href="/tags/#python" title="python">python</a>
                         
                     </div>
                 </section>
@@ -302,8 +377,8 @@
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "your-disqus-ID";
-    var disqus_identifier = "http://yoursite-url/2019/02/26/greeting/";
-    var disqus_url = "http://yoursite-url/2019/02/26/greeting/";
+    var disqus_identifier = "http://yoursite-url/2019/03/03/Python_basic/";
+    var disqus_url = "http://yoursite-url/2019/03/03/Python_basic/";
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
