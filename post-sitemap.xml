@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>http://yoursite-url/2019/11/23/comeback/</loc>
+        <lastmod>2019-11-23T11:03:02.101Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://yoursite-url/2019/03/03/Python_basic/</loc>
         <lastmod>2019-03-03T17:27:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
